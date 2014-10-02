@@ -3,11 +3,14 @@ window.onload=function(){
 }
 
 var logDiv;
-var log = function(){ console.log(arguments);logDiv.innerHTML+=arguments[0]+"<BR>"; }
+var log = function(){ 
+    console.log(arguments);
+    logDiv.innerHTML+=arguments[0]+"<BR>"; 
+}
 var socket = io.connect('http://localhost'); // 1
 
 socket.on('connect', function() { // 2
-  log('connected');
+  //log('connected');
   socket.emit('msg send', 'data'); // 3
   socket.on('msg push', function (msg) { // 7
     log(msg); // 8
