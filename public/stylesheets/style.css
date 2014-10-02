@@ -12,7 +12,8 @@ a {
 }
 
 .roomname{
-    text-indent:5em;
+    padding: 20px 0;
+    text-indent:3em;
     text-align:left;
     font-size:x-large;
     font-weight:bold;
@@ -21,6 +22,10 @@ a {
 
 .inputBox{
   
+}
+
+.tab{
+    padding: 0px 30px ;
 }
 
 .log{
