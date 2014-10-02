@@ -5,7 +5,8 @@ window.onload=function(){
 var logDiv;
 var log = function(){ 
     console.log(arguments);
-    logDiv.innerHTML+=arguments[0]+"<BR>"; 
+    logDiv.innerHTML+="<left><img src='images/account.png' style='float:right'></left>";
+    logDiv.innerHTML+="<div class='log'>"+arguments[0]+"<br></div>";
 }
 var socket = io.connect('http://localhost'); // 1
 
